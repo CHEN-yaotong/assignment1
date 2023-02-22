@@ -20,3 +20,7 @@ merged_df = merged_df[~merged_df['job'].str.contains('insurance|Insurance')]
 
 # (4) write the cleaned data to the file specified by the output_file argument.
 merged_df.to_csv(args.output_file, index=False)
+
+print(merged_df)
+print("Output file shape:")
+print(merged_df.shape)
